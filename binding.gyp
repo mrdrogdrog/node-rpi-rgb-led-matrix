@@ -4,14 +4,13 @@
 	        "target_name": "node-rpi-rgb-led-matrix",
 	        "sources": [ "src/base.cc", "src/ledmatrix.cc", "src/image.cc" ],
 	        "dependencies": [ "./binding.gyp:rpi-rgb-led-matrix" ],
-	        "include_dirs": [ "./external/matrix/include", "./include/", "<!(node -e \"require('nan')\")" ]
+	        "include_dirs": [ "./external/matrix/include", "./external/matrix/lib", "./include/", "<!(node -e \"require('nan')\")" ]
 	    },
 		{
 			"target_name": "rpi-rgb-led-matrix",
 			"type": "static_library",
 			"sources": [
 
-			"./external/matrix/lib/transformer.cc",
 			"./external/matrix/lib/thread.cc",
 			"./external/matrix/lib/pixel-mapper.cc",
 			"./external/matrix/lib/options-initialize.cc",
@@ -31,7 +30,7 @@
 			],
 
 			"libraries": ["-lrt", "-lm", "-lpthread"],
-			"include_dirs": [ "external/matrix/include" ],
+			"include_dirs": [ "external/matrix/include", "external/matrix/lib" ],
 	        "direct_dependent_settings": {
 	            "include_dirs": [ "external/matrix/include" ]
 	        }

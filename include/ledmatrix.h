@@ -20,7 +20,7 @@
 #include <led-matrix.h>
 #include <image.h>
 #include <graphics.h>
-
+#include <gpio.h>
 using namespace rgb_matrix;
 using rgb_matrix::GPIO;
 

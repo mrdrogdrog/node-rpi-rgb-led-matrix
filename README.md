@@ -1,29 +1,24 @@
-# easybotics-rpi-rgb-led-matrix
+# rpi-rgb-led-matrix
 
-# WORKS ON THE RASPBERRY PI 3B AND RASPBERRY PI 4!!!!
-# tested on node 8 and node 10, probably works on node13 now 
-# check out this guys fork: https://github.com/easybotics/node-rpi-rgb-led-matrix/pull/9 
-# targetted at raspbian jesse 
 Pilot your rgb led matrix with Nodejs on Raspberry Pi ! Nodejs binding of rpi-rgb-led-matrix library https://github.com/hzeller/rpi-rgb-led-matrix
 
+**Fork of: https://github.com/easybotics/node-rpi-rgb-led-matrix**
 
-**Fork of: https://github.com/zeitungen/node-rpi-rgb-led-matrix**
-
-**Actively being maintained and modified for: https://github.com/easybotics/node-red-contrib-led-matrix**
+**Actively being maintained and modified for: https://github.com/mrdrogdrog/node-red-contrib-led-matrix**
 
 **It is binding recent version of rpi-rgb-led-matrix library.**
 
 
 ### Installation with npm
 ```
-$ npm i easybotics-rpi-rgb-led-matrix
+$ npm i @mrdrogdrog/rpi-rgb-led-matrix
 ```
 
 ### Installation with git
 
 ```
-$ git clone --recursive https://github.com/easybotics/node-rpi-rgb-led-matrix.git
-$ cd easybotics-rpi-rgb-led-matrix
+$ git clone --recursive https://github.com/mrdrogdrog/node-rpi-rgb-led-matrix.git
+$ cd node-rpi-rgb-led-matrix
 $ npm i
 ```
 
